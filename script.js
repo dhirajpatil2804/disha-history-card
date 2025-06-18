@@ -2,12 +2,9 @@ const API_URL = "https://script.google.com/macros/s/AKfycbwIJ0xTCBVSAgyE9XAy-hFU
 
 let student = {
   name: "",
-  mobile: ""
+  mobile: ""s
 };
-mentById("studentName").value.trim();
-  const mobile = document.getElementById("mobile").value.trim();
 
-  if (!name || !mobile) {
 function studentLogin() {
   const name = document.getElementById("studentName").value.trim();
   const mobile = document.getElementById("mobile").value.trim();
@@ -25,7 +22,6 @@ function studentLogin() {
 
   loadMyHistory();
 }
-showTodayDate();
 
 function submitHistory() {
   const history = document.getElementById("historyCard").value.trim();
