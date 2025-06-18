@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Disha History Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h2>Disha Computer Institute</h2>
+
+    <h3>Submit Your History Card</h3>
+    <input type="text" id="name" placeholder="Your Name" />
+    <textarea id="history" placeholder="What did you learn today?"></textarea>
+    <button onclick="submitCard()">Submit</button>
+    <p id="msg"></p>
+
+    <hr>
+
+    <h3>Teacher Login</h3>
+    <input type="password" id="tpass" placeholder="Teacher Password" />
+    <button onclick="viewCards()">View Submissions</button>
+
+    <ul id="submissions"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
