@@ -1,10 +1,13 @@
-const API_URL = "https://script.google.com/macros/s/PASTE_YOUR_DEPLOYED_URL/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbwIJ0xTCBVSAgyE9XAy-hFUj_FGGCQuZRFaa05XPlQ/dev";
 
 let student = {
   name: "",
   mobile: ""
 };
+mentById("studentName").value.trim();
+  const mobile = document.getElementById("mobile").value.trim();
 
+  if (!name || !mobile) {
 function studentLogin() {
   const name = document.getElementById("studentName").value.trim();
   const mobile = document.getElementById("mobile").value.trim();
@@ -22,6 +25,7 @@ function studentLogin() {
 
   loadMyHistory();
 }
+showTodayDate();
 
 function submitHistory() {
   const history = document.getElementById("historyCard").value.trim();
